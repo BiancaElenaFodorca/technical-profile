@@ -1,0 +1,77 @@
+#skill { 
+	list-style: none;
+    font-size: 12px;
+    font-family: Montserrat, sans-serif;
+	width: 50%;
+	margin: 0px auto 0;
+	position: relative;
+	line-height: 2em;
+	padding: 30px 0;
+}
+
+#skill li { 
+	margin-bottom:50px; 
+	background:#e9e5e2;
+	height:20px; 
+	border-radius:10px;
+}
+
+#skill li h3 { 
+	position: relative; 
+	top:-25px;
+}
+
+.bar { 
+	height:20px; 
+	margin:1px 2px;  
+	position:absolute;
+	border-radius:10px;
+}
+
+.angular2 {
+	width: 90%; 
+	animation: angular2 6s ease-out; 
+	animation: angular2 6s ease-out;
+	background-color: #A39185;
+}
+
+.html-css {
+	width: 85%;
+	animation: html-css 6s ease-out;
+	animation: html-css 6s ease-out;
+	background-color: #f0bb4b;
+}
+
+.java-script {
+	width: 65%;
+	animation: java-script 6s ease-out;
+	animation: java-script 6s ease-out;
+	background-color: #E0BCA5;
+}
+
+.angular-js {
+	width: 70%;
+	animation: angular-js 6s ease-out;
+	animation: angular-js 6s ease-out;
+	background-color: #3CAEA3;
+}
+
+.new-technologies {
+	width: 15%;
+	animation: new-technologies 6s ease-out;
+	animation: new-technologies 6s ease-out;
+	background-color: #DBDB21;
+}
+
+@keyframes angular2 {0%  { width: 0px;} 100%{ width: 90%;}  }
+@keyframes html-css        { 0%  { width: 0px;} 100%{ width: 85%;}  }
+@keyframes java-script     { 0%  { width: 0px;} 100%{ width: 65%;}  }
+@keyframes angular-js   { 0%  { width: 0px;} 100%{ width: 70%;}  }
+@keyframes new-technologies   { 0%  { width: 0px;} 100%{ width: 15%;}  }
+
+@media screen and (max-width: 800px) {
+    #skill {
+        width: 90%;
+        padding: 20px 0;
+    }
+}

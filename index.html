@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bianca Fodorca</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/9.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="fonts/familyMontserrat.css">
+  <link rel="stylesheet" href="style-effects/progress-bars.css">
+  <link rel="stylesheet" href="style-effects/fading.css">
+</head>
+
+<body>
+  <div class="content">
+    <div id="navbar">
+      <a href="#contact">Contact</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Work Experience</a>
+      <a class="active" href="#intro">Intro</a>
+    </div>
+    <div id="jumbotron"></div>
+  
+    <div class="column-layout" id="intro">
+      <div class="main-column">
+        <h3>About me</h3>
+        <p id="aboutme"></p>
+      </div>
+      <div class="slidebar-one fade-in">
+          <img id="profile-picture" src="images/me.jpg" onclick="navigateToOfficialPage('linkedin', true)">
+      </div>
+    </div>
+    
+    <div class="delimitator" id="experience">
+      <div class="slider-wrapper">
+        I love to
+        <div class="slider">
+            <div class="slider-text1">imagine</div>
+            <div class="slider-text2">create</div>
+            <div class="slider-text3">code</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column-layout" >
+    <h3>Work Experience:</h3>
+      <div class="card fade-in" onclick="navigateToOfficialPage('cicada', false)">
+        <img src="images/cicada.png" class="card-image"> 
+        <p>February 2017 - June 2019</p>
+      </div>
+      <div class="card fade-in" onclick="navigateToOfficialPage('cognizant', false)">
+       <img src="images/cognizant2.png" class="card-image"> 
+        <p>June 2019 - Present</p>
+      </div>
+    </div>
+
+    <div class="column-layout" >
+      <h3>Technologies:</h3>
+      <ul id="skill">
+        <li><span class="bar angular2"></span><h3>Angular 2+</h3></li>
+        <li><span class="bar html-css"></span><h3>Html / Css</h3></li>
+        <li><span class="bar java-script"></span><h3>Java Script</h3></li>
+        <li><span class="bar angular-js"></span><h3>Angular JS</h3></li>
+        <li><span class="bar new-technologies"></span><h3>Waaait! I'm still learning</h3></li>
+      </ul>
+    </div>
+
+    <div class="delimitator"></div>
+
+    <div class="column-layout" id="projects">
+      <h3>Projects:</h3>
+      <div id="projects-container"></div>
+    </div>
+
+    <div id="contact"">
+      <div class="column-layout contact-section" >
+        <h3>Contact</h3>
+        <div id="contact-info">
+          <p><i>Email address:</i> bfodorca@gmail.com<br></p>
+          <p><i>Telephone number:</i> 0753388010</p>
+        </div>
+        <div id="social-info">
+          <img class="social-logo" src="images/facebook.png" onclick="navigateToOfficialPage('facebook', true)">
+          <img class="social-logo" src="images/linkedin.png" onclick="navigateToOfficialPage('linkedin', true)">
+          <img class="social-logo" src="images/git.png" onclick="navigateToOfficialPage('git', true)">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+   <div id="copyright"></div>
+  </div>
+
+  <script src="mocks/service-mock.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
