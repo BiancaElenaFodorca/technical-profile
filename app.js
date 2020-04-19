@@ -16,11 +16,11 @@ window.onscroll = function() {
 };
 
 function populateAuthorInformation() {
-  var name = generateDOMElementsWithAssociateClass('h1','fade-in');
+  let name = generateDOMElementsWithAssociateClass('h1','fade-in');
   name.innerText = authorDetails.name.toUpperCase();
   jumbotron.append(name);
 
-  var motto = generateDOMElementsWithAssociateClass('p','fade-in');
+  let motto = generateDOMElementsWithAssociateClass('p','fade-in');
   motto.innerHTML = authorDetails.motto;
   jumbotron.append(motto);
 
@@ -66,7 +66,7 @@ function populateProjectsList() {
 }
 
 function generateDOMElementsWithAssociateClass(elementType, className) {
-  var element = document.createElement(elementType);
+  let element = document.createElement(elementType);
 
   if (className) {
     element.classList.add(className);
@@ -75,10 +75,10 @@ function generateDOMElementsWithAssociateClass(elementType, className) {
 }
 
 function createUnorderList(array) {
-    var list = document.createElement('ul');
+    let list = document.createElement('ul');
 
     for (var i = 0; i < array.length; i++) {
-        var item = document.createElement('li');
+        let item = document.createElement('li');
         item.appendChild(document.createTextNode(array[i]));
         list.appendChild(item);
     }
